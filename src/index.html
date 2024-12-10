@@ -9,8 +9,14 @@
       src="https://kit.fontawesome.com/839aa981e5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="p-5 lg:px-20 lg:pt-10">
+  <body class="p-5 lg:px-20 lg:pt-10 text-primary font-sans">
     <nav class="flex items-center justify-between">
       <div class="logo">
         <img src="/assets/zoom-logo.svg" alt="Zoom logo" />
@@ -40,9 +46,52 @@
       </div>
       <div class="hidden sm:flex sm:items-center sm:pr-9 md:pr-0">
         <i class="fa fa-search mr-7"></i>
-        <button class="border-black border-2 py-2 px-7">Sign up</button>
+        <button class="border-primary border-2 py-2 px-7">Sign up</button>
       </div>
     </nav>
+    <header class="mt-16 h-96 text-center flex flex-col items-center">
+      <div class="relative w-full lg:max-w-3xl h-full overflow-hidden md:py-28">
+        <h1
+          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out"
+        >
+          Find what you need when you need it with
+          <span class="text-secondary">AI Companion</span>
+        </h1>
+        <h1
+          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out [animation-delay:5s]"
+        >
+          Identify, execute, & complete your priorities with
+          <span class="text-secondary">AI Companion</span>
+        </h1>
+        <h1
+          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out [animation-delay:10s]"
+        >
+          Transform your information into action with
+          <span class="text-secondary">AI Companion</span>
+        </h1>
+      </div>
+      <div class="flex flex-col items-center space-y-7 max-w-lg mt-8">
+        <div class="desc text-xl text-center text-primary">
+          <p>
+            Accomplish more with Zoom Workplace: your AI-first work platform
+            featuring AI Companion 2.0, included at no extra cost.*
+          </p>
+        </div>
+        <div class="cta">
+          <button
+            class="bg-secondary text-white py-2 px-7 shadow-blue-light hover:bg-blue-500 transition-all duration-300"
+          >
+            Sign up for free
+          </button>
+        </div>
+
+        <div class="flex items-center">
+          <span>Discover Zoom Workplace</span>
+          <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
+        </div>
+      </div>
+    </header>
+
     <script src="script.js"></script>
   </body>
 </html>
