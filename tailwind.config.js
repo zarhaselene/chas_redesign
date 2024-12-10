@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary: "#011132",
         secondary: "#014CE5",
+        button: "#011746",
       },
       keyframes: {
         slideInOut: {
@@ -19,11 +20,18 @@ module.exports = {
       fontFamily: {
         sans: ["Mona Sans", "sans-serif"],
       },
-
       boxShadow: {
         "blue-light": " 0px 0px 25px -10px rgba(10,64,173,1)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".nav-item": {
+          "@apply hover:text-secondary transition-all duration-300": {},
+        },
+      });
+    },
+  ],
 };

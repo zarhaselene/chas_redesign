@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="overflow-x-hidden lg:pt-10 text-primary font-sans">
+  <body class="lg:pt-10 text-primary font-sans">
     <nav class="p-5 lg:px-20 flex items-center justify-between">
       <div class="logo">
         <img src="/assets/zoom-logo.svg" alt="Zoom logo" />
@@ -25,19 +25,18 @@
         <i class="fa fa-bars"></i>
       </div>
 
-      <ul class="cursor-pointer hidden md:flex list-none space-x-7">
-        <li>Products</li>
-        <li>Solutions</li>
-        <li>Resources</li>
-        <li>Plans & pricing</li>
+      <ul class="cursor-pointer hidden md:flex list-none space-x-7 ">
+        <li class="nav-item">Products</li>
+        <li class="nav-item">Solutions</li>
+        <li class="nav-item">Resources</li>
+        <li class="nav-item">Plans & pricing</li>
       </ul>
       <div
         id="menu"
-        class="hidden mobile-menu text-white bg-primary h-full p-10 absolute right-0 top-0"
+        class="hidden mobile-menu text-white bg-primary h-full p-10 absolute right-0 top-0 z-10"
       >
         <i id="close" class="fa fa-close text-lg absolute right-5 top-5"></i>
-
-        <ul class="cursor-pointer list-none space-y-3 mt-5">
+        <ul class="cursor-pointer list-none space-y-3 mt-5 ">
           <li>Products</li>
           <li>Solutions</li>
           <li>Resources</li>
@@ -45,34 +44,35 @@
         </ul>
       </div>
       <div class="hidden sm:flex sm:items-center sm:pr-9 md:pr-0">
-        <i class="fa fa-search mr-7"></i>
-        <button class="border-primary border-2 py-2 px-7">Sign up</button>
+        <i class="fa fa-search mr-7 cursor-pointer"></i>
+        <button class="border-primary border-2 py-2 px-7 hover:bg-primary hover:text-white transition-all duration-300">Sign up</button>
       </div>
     </nav>
     <header
-      class="px-5 lg:px-20 mt-16 h-96 text-center flex flex-col items-center mb-16 md:mb-36"
+      class="px-5 lg:px-20 mt-16 h-96 text-center flex flex-col items-center mb-12 md:mb-36"
     >
-      <div class="relative w-full lg:max-w-3xl h-full overflow-hidden md:py-28">
+      <div class="relative w-full lg:max-w-4xl h-full overflow-hidden md:py-28">
         <h1
-          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out"
+          class="text-4xl md:text-6xl font-bold absolute md:bottom-8 left-0 w-full text-center translate-y-full opacity-0 animate-slide-in-out"
         >
           Find what you need when you need it with
           <span class="text-secondary">AI Companion</span>
         </h1>
         <h1
-          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out [animation-delay:5s]"
+          class="text-4xl md:text-6xl font-bold absolute md:bottom-8 left-0 w-full text-center translate-y-full opacity-0 animate-slide-in-out [animation-delay:5s]"
         >
           Identify, execute, & complete your priorities with
           <span class="text-secondary">AI Companion</span>
         </h1>
         <h1
-          class="text-4xl md:text-6xl font-bold absolute inset-0 translate-y-full opacity-0 animate-slide-in-out [animation-delay:10s]"
+          class="text-4xl md:text-6xl font-bold absolute md:bottom-8 left-0 w-full text-center translate-y-full opacity-0 animate-slide-in-out [animation-delay:10s]"
         >
           Transform your information into action with
           <span class="text-secondary">AI Companion</span>
         </h1>
       </div>
-      <div class="flex flex-col items-center space-y-7 max-w-lg mt-8">
+
+      <a class="flex flex-col items-center space-y-7 max-w-lg mt-8">
         <div class="desc text-xl text-center text-primary">
           <p>
             Accomplish more with Zoom Workplace: your AI-first work platform
@@ -81,24 +81,44 @@
         </div>
         <div class="cta">
           <button
-            class="bg-secondary text-white py-2 px-7 shadow-blue-light hover:bg-blue-500 transition-all duration-300"
+            class="bg-secondary text-white py-2 px-7 shadow-blue-light hover:bg-primary transition-all duration-300"
           >
             Sign up for free
           </button>
         </div>
 
-        <div class="flex items-center">
-          <span>Discover Zoom Workplace</span>
+        <a href="#" class="mt-8 flex items-center hover:text-secondary transition-all duration-300">
+          Discover Zoom Workplace
           <i class="fa-solid fa-chevron-right ml-2 text-xs"></i>
-        </div>
+        </a>
       </div>
     </header>
-    <div class="bg-primary h-36 text-white flex items-center justify-center">
-      <div class="px-5 lg:px-20">
-        <h2 class="md:text-2xl font-bold">
-          The AI-first work platform for human connection
-        </h2>
-        <div class=""></div>
+    <div class="bg-primary py-8 text-white flex justify-center">
+      <div class="px-5 lg:px-20 md:flex items-center">
+        <div class="image">
+          <img src="/assets/image-1.png" alt="Wheel" />
+        </div>
+        <div class="lg:max-w-4xl">
+          <h2 class="text-2xl font-bold mb-3">
+            The AI-first work platform for human connection
+          </h2>
+          <p class="mb-3">
+            Work happy with AI Companion, reimagine teamwork, enhance customer
+            relationships, and enable seamless experiences with a choice of
+            third-party apps and integrations for best-in-class collaboration.
+          </p>
+          <button
+            class="my-5 bg-secondary hover:bg-primary border-secondary border-2 hover:border-secondary transition-all duration-300 py-2 px-7"
+          >
+            Discover the possibilities
+          </button>
+          <p class="text-sm text-gray-400">
+            *AI Companion is included at no additional cost with the paid
+            services in your Zoom user account and may not be available for all
+            regions and industry verticals. Some features not currently
+            available across all regions or plans and are subject to change
+          </p>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
