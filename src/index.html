@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoom redesign</title>
-    <link href="./src/output.css" rel="stylesheet" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/839aa981e5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body class="p-5 lg:px-20 lg:pt-10">
+    <nav class="flex items-center justify-between">
+      <div class="logo">
+        <img src="/assets/zoom-logo.svg" alt="Zoom logo" />
+      </div>
+      <div id="bars" class="sm:absolute sm:right-5 md:hidden">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <ul class="cursor-pointer hidden md:flex list-none space-x-7">
+        <li>Products</li>
+        <li>Solutions</li>
+        <li>Resources</li>
+        <li>Plans & pricing</li>
+      </ul>
+      <div
+        id="menu"
+        class="hidden mobile-menu text-white bg-primary h-full p-10 absolute right-0 top-0"
+      >
+        <i id="close" class="fa fa-close text-lg absolute right-5 top-5"></i>
+
+        <ul class="cursor-pointer list-none space-y-3 mt-5">
+          <li>Products</li>
+          <li>Solutions</li>
+          <li>Resources</li>
+          <li>Plans & pricing</li>
+        </ul>
+      </div>
+      <div class="hidden sm:flex sm:items-center sm:pr-9 md:pr-0">
+        <i class="fa fa-search mr-7"></i>
+        <button class="border-black border-2 py-2 px-7">Sign up</button>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+  </body>
 </html>
